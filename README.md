@@ -13,7 +13,7 @@ The data file includes all physical parameters.
 
 ## IC: Matlab-code to generate the binaries files of the initial conditions and Qnet-Forcing.
 
-The binary obtened from InitCondi.m should put in:  EXP*/input/ .
-The QnetIDE.forcing obtened from InitCondi.m should put in:  EXP2/input/ , and EXP4/input/
+The binary obtened from InitCondi.m should be placed in:  EXP*/input/ .
+The QnetIDE.forcing obtened from InitCondi.m should be placed in the:  EXP2/input/ , and EXP4/input/
 
 For more information on how to run the simulations and a detailed tutorial on using the MITgcm ocean model, please refer to the following link: https://mitgcm.readthedocs.io/en/latest/examples/examples.html.
