@@ -6,7 +6,7 @@ nz=60; % depth
 deltaxy=200%200 % metros
 perturba=1 % 1 Add white noise into the density field
 %==========================================================================
-[dens,theta,uinit,etainit,zc,dh,Us,Ri,Ls,Lsmin,ts] = DATOSdeENTRADA(ny,nx,nz,deltaxy,perturba);
+[dens,theta,uinit,etainit,zc,dh,Us,Ri,Ls,Lsmin,ts] = frontInitCondi(ny,nx,nz,deltaxy,perturba);
 %==========================================================================
 tem3dN=theta;  % temp
 uvelN=uinit;      % zonal velocity
