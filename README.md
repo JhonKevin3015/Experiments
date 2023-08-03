@@ -1,6 +1,9 @@
 # Experiments
 The MITgcm numerical experiment configurations utilized in the study by Aparco-Lara et al., 2023, are as follows:
 
+![](https://img.shields.io/github/stars/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/forks/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/tag/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/release/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/issues/JhonKevin3015/Experiments.svg) 
+
+
 ##  EXP1 
 Unforced case with KPP active
 ##	EXP2 
