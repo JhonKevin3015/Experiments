@@ -13,15 +13,21 @@ Unforced case with KPP inactive
 ##	EXP4 
 Unforced case with KPP inactive
 ### General Description
-Each experiment folder contains a code package and input files. The `EXP*\CODE` folder includes two important files: `packages.conf`, where KPP is turned on for `EXP1` and `EXP2`, and turned off for `EXP3` and `EXP4`; and the file `SIZE.h` which is set to use 25 processors.
+* Each experiment folder contains a `code` and `input` subfolder. Within the `EXP*/CODE` folder, you will find two important files:
+  - `packages.conf`: This file determines whether KPP is activated or deactivated for the specific experiment. It is set to activate KPP for EXP1 and EXP2 and deactivate KPP for EXP3 and EXP4.
+  - `SIZE.h`: This file sets the number of processors used for the simulations.
 
-The `input` folder contains binary files for initial conditions, where `EXP2` and `EXP4` have `QnetIDE.forcing` files for atmospheric forcing
-The data file includes all physical parameters.
 
-## IC: Matlab-code to generate the binaries files of the initial conditions and Qnet-Forcing.
+* In `EXP*/input` folder, you can find the data files to modify the physical parameters, as well as the location where the Initial Conditions obtained from Matlab codes in the `IC` folder should be placed.
 
-The binary obtened from `InitCondi.m` should be placed in:  `EXP*/input/` .
-The `QnetIDE.forcing` obtened from `InitCondi.m` should be placed in the:  `EXP2/input/` , and `EXP4/input/`
+* Additionally, in the `EXP2` and `EXP4` folders, you will find an additional file named `QnetIDE.forcing`, which contains the atmospheric forcing data.
 
-For more information on how to run the simulations and a detailed tutorial on using the MITgcm ocean model, please refer to the following link: 
-[Mitgcm:Examples](https://mitgcm.readthedocs.io/en/latest/examples/examples.html).
+* Each experiment folder contains outputs for the 15th day of simulation. This data was used to [generate figures](https://github.com/JhonKevin3015/VHFs) in Aparco-Lara et al., 2023.
+
+  
+### IC: Matlab-code to generate the initial conditions and Qnet-Forcing binary files.
+
+* The binary obtained from `InitCondi.m` should be placed in each `EXP*/input/` folder.
+* The `QnetIDE.forcing` obtained from `InitCondi.m` should be placed in the `EXP2/input/` and `EXP4/input/` folders.
+
+For more information on how to run the simulations, refer to the [MITgcm tutorial (examples)](https://mitgcm.readthedocs.io/en/latest/examples/examples.html).
