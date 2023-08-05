@@ -1,8 +1,7 @@
-# Experiments
-The MITgcm numerical experiment configurations utilized in the study by Aparco-Lara et al., 2023, are as follows:
-
+# Experiments [![DOI](https://zenodo.org/badge/639617294.svg)](https://zenodo.org/badge/latestdoi/639617294)
 ![](https://img.shields.io/github/stars/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/forks/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/tag/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/release/JhonKevin3015/Experiments.svg) ![](https://img.shields.io/github/issues/JhonKevin3015/Experiments.svg) 
 
+The MITgcm numerical experiment configurations utilized in the study by Aparco-Lara et al., 2023, are as follows:
 
 ##  EXP1 
 Unforced case with KPP active
@@ -25,9 +24,13 @@ Unforced case with KPP inactive
 * Each experiment folder contains outputs for the 15th day of simulation. This data was used to [generate figures](https://github.com/JhonKevin3015/VHFs) in Aparco-Lara et al., 2023.
 
   
-### IC: Matlab-code to generate the initial conditions and Qnet-Forcing binary files.
+### IC: Matlab-code to Generate Initial Conditions and Qnet-Forcing Binary Files.
 
-* The binary obtained from `InitCondi.m` should be placed in each `EXP*/input/` folder.
-* The `QnetIDE.forcing` obtained from `InitCondi.m` should be placed in the `EXP2/input/` and `EXP4/input/` folders.
+To set up the initial conditions and atmospheric forcing for the MITgcm numerical experiments, Matlab codes are utilized. Follow these steps to properly configure the necessary files:
 
-For more information on how to run the simulations, refer to the [MITgcm tutorial (examples)](https://mitgcm.readthedocs.io/en/latest/examples/examples.html).
+1. Run the Matlab script `InitCondi.m` to generate the binary file required for the initial conditions. This binary file should be placed in each `EXP*/input/` folder corresponding to the specific experiment (EXP1, EXP2, EXP3, EXP4).
+
+2. Additionally, the Matlab script `InitCondi.m` also generates the `QnetIDE.forcing` file. This file should be placed in the `EXP2/input/` and `EXP4/input/` folders, as they require an additional atmospheric forcing component.
+
+By following these steps, you will have prepared the necessary input files for the MITgcm numerical experiments. For more detailed guidance on running the simulations, you can refer to the [MITgcm tutorial (examples)](https://mitgcm.readthedocs.io/en/latest/examples/examples.html). This tutorial provides comprehensive information on running MITgcm simulations and can be a valuable resource for your research.
+
