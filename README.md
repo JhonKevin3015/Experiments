@@ -18,7 +18,7 @@ Unforced case with KPP inactive
   - `SIZE.h`: This file sets the number of processors used for the simulations.
 
 
-* In `EXP*/input` folder, you can find the data files to modify the physical parameters, as well as the location where the Initial Conditions obtained from Matlab codes in the `IC` folder should be placed.
+* In `EXP*/input` folder, you can find the data files to modify the physical parameters, as well as the location where the Initial Conditions files obtained from Matlab codes in the `IC` folder should be placed.
 
 * Additionally, in the `EXP2` and `EXP4` folders, you will find an additional file named `QnetIDE.forcing`, which contains the atmospheric forcing data.
 
