@@ -28,9 +28,9 @@ Unforced case with KPP inactive
 
 To set up the initial conditions and atmospheric forcing for the MITgcm numerical experiments, Matlab codes are utilized. Follow these steps to properly configure the necessary files:
 
-1. Run the Matlab script `InitCondi.m` to generate the binary file required for the initial conditions. This binary file should be placed in each `EXP*/input/` folder corresponding to the specific experiment (EXP1, EXP2, EXP3, EXP4).
+* Run the Matlab script `InitCondi.m` to generate the binary file required for the initial conditions. This binary file should be placed in each `EXP*/input/` folder corresponding to the specific experiment (EXP1, EXP2, EXP3, EXP4).
 
-2. Additionally, the Matlab script `InitCondi.m` also generates the `QnetIDE.forcing` file. This file should be placed in the `EXP2/input/` and `EXP4/input/` folders, as they require an additional atmospheric forcing component.
+* Additionally, the Matlab script `InitCondi.m` also generates the `QnetIDE.forcing` file. This file should be placed in the `EXP2/input/` and `EXP4/input/` folders, as they require an additional atmospheric forcing component.
 
 By following these steps, you will have prepared the necessary input files for the MITgcm numerical experiments. For more detailed guidance on running the simulations, you can refer to the [MITgcm tutorial (examples)](https://mitgcm.readthedocs.io/en/latest/examples/examples.html). This tutorial provides comprehensive information on running MITgcm simulations and can be a valuable resource for your research.
 
